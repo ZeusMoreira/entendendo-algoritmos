@@ -104,3 +104,7 @@ Quando adicionamos ciclos a um grafo direcionado, isso serve apenas para nos ger
 No capítulo anterior vimos a questão de grafos direcionados e grafos não direcionados, os direcionados só terão ciclos de forma explicita, pois cada a aresta desse grafo não será mão dupla, então terão que ter 2 arestas com setas para indicar o ciclo de um vértice a outro, já o grafo não direcionado faz com que cada vértice seja mão dupla, virando assim um ciclo. Todo grafo não direciona tem ciclos.
 
 O algoritmo de Dijkstra só funciona em grafos sem ciclos ou em grafos de ciclo positivo. 
+
+### Arestas negativas
+
+Imagina que no exemplo anterior para ir de B até A o custo fosse de -3, isso faria com que o custo para sair de inicio até A passando por B fosse: 2 - 3 = -1, ou seja seria ainda melhor esse caminho, porém arestas com pesos negativos estragam o algoritmo de Dijkstra. Para esses casos a melhor alternativa que é o algoritmo de Bellman-ford que não será abordado no livro de estudo.
